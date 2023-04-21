@@ -9,7 +9,9 @@ code: true
 
 ![150](pupil.jpg)
 
-!> 本教程只针对 Microsoft Windows 10 操作系统！
+``` ad-tip
+本教程只针对 Microsoft Windows 10 操作系统！
+```
 
 # 什么是mice
 
@@ -142,9 +144,11 @@ void cspice_spkw09(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
 
 正式编译之前，请注意：
 
-!> cspice源代码没有使用`mwSize`，而是使用`int`，因此鲁棒性很差，编译时必须采用`-compatibleArrayDims`模式
+``` ad-tip
+cspice源代码没有使用`mwSize`，而是使用`int`，因此鲁棒性很差，编译时必须采用`-compatibleArrayDims`模式
 
-!> SPICE Toolkit version is **N0066**。测试环境为 MATLAB **2020b** 和 Microsoft Visual Studio **14.0**
+SPICE Toolkit version is **N0066**。测试环境为 MATLAB **2020b** 和 Microsoft Visual Studio **14.0**
+```
 
 ------
 
@@ -167,7 +171,9 @@ FILE* __cdecl __iob_func(unsigned i) {
 
 > 因为不同版本的 VS 对`stdin`, `stdout`, `stderr`的定义不同（参见`C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\corecrt_wstdio.h`文件）
 
-?> 在此之后，有**两种方案**可供选择
+``` ad-tip
+在此之后，有**两种方案**可供选择
+```
 
 ------
 
@@ -283,7 +289,9 @@ end
 
 ------
 
-!> 最后，即使按照以上步骤做了，也不一定能成功，比较依赖编译环境。但是，在 MATLAB **2020b** 和 Microsoft Visual Studio **14.0** 环境下，经测试，没有问题。**如果没成功，请不要迁怒于任何一个工具**，它们都是相当优秀的。
+``` ad-warning
+最后，即使按照以上步骤做了，也不一定能成功，比较依赖编译环境。但是，在 MATLAB **2020b** 和 Microsoft Visual Studio **14.0** 环境下，经测试，没有问题。**如果没成功，请不要迁怒于任何一个工具**，它们都是相当优秀的。
+```
 
 ![150](girl.jpg)
 

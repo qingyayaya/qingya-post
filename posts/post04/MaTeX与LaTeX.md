@@ -38,7 +38,7 @@ $$
 $$
 美中不足的是，Mathematica **自身并不能渲染**出 LaTeX 公式。只有一个差强人意的 TraditionalForm：
 
-![150](snap1.png)
+![550](snap1.png)
 
 但是，有人就说了：
 

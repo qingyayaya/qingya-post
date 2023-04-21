@@ -1,0 +1,8 @@
+{
+  "userIgnoreFilters": [
+    "*/assets/"
+  ],
+  "newFileLocation": "folder",
+  "newFileFolderPath": "assets/",
+  "livePreview": false
+}

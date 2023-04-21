@@ -247,7 +247,9 @@ Mercator 投影
 
 ## 面积的变化
 
-!> 提示：以下内容可能引起密集恐惧症患者不适，请有选择地阅读！
+``` ad-warning
+提示：以下内容可能引起密集恐惧症患者不适，请有选择地阅读！
+```
 
 在地球表面取若干**等面积**的圆形区域，如下图：
 
@@ -464,7 +466,7 @@ $$
 $$
 反解出 $\theta$：（有请 Mathematica）
 
-<div style="text-align:left;"><img src="../pics/post8/snap1.png" width="500"/></div>
+![500](snap1.png)
 
 那么，此时
 $$
@@ -481,7 +483,7 @@ $$
 
 尝试计算一下它的逆变换：
 
-<div style="text-align:left;"><img src="../pics/post8/snap2.png" width="800"/></div>
+![800](snap2.png)
 
 有点过于复杂。
 
@@ -494,6 +496,7 @@ $$
 ![220](zhaobenshan.png)
 
 下面研究不同的发光点偏移与等角投影点的距离偏差，即下式的图像：
+
 $$
 \delta y(\phi) = 
 \frac{R (\Delta +R) \sin \phi}{\Delta +R \cos \phi}
@@ -507,11 +510,15 @@ $$
 
 # 结尾
 
-!> 强烈谴责Mathematica的中国地图不完整！！！
-!>
-!> 坚决抵制使用Mathematica绘制中国地图！！！
+``` ad-warning
+强烈谴责Mathematica的中国地图不完整！！！
 
-?> 正确的中国地图如下：
+坚决抵制使用Mathematica绘制中国地图！！！
+```
+
+``` ad-tip
+正确的中国地图如下：
+```
 
 ![400](China%20Map.png)
 

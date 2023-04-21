@@ -57,6 +57,7 @@ $$
 $$
 \ddot{\vec{\rho}} + \begin{pmatrix} -2\dot{y}\\ 2\dot{x} \\0 \end{pmatrix} = \frac{ \partial \Omega }{ \partial \vec{\rho} }
 $$
+
 ------
 
 平动点对应的 $\vec{\rho}_e = \vec{0}$，接下来对上式在 $\vec{\rho}_e$ 附近做线性化处理。对上式的非线性项在 $\vec{\rho}_e$ 处 Taylor 展开，得到
@@ -81,6 +82,7 @@ $$
 $$
 \ddot{\vec{\rho}} + \begin{pmatrix} -2\dot{y}\\ 2\dot{x} \\0 \end{pmatrix} = \frac{ \partial^2 \Omega }{ \partial \vec{r}_e^2 } \vec{\rho}
 $$
+
 ------
 
 把 $\frac{ \partial^2 \Omega }{ \partial \vec{r}^2 }$ 写成分量的形式：
@@ -236,7 +238,7 @@ $$
 
 三维轨迹如下
 
-![](lissajous.gif" width="600"/></div>
+![](lissajous.gif)
 
 # 施加 $z$ 方向脉冲
 
@@ -473,6 +475,7 @@ A_{4}^{(f)} - A_{4}^{(i)} &= \frac{c}{d_{2}} \cos \omega t_{m} \Delta \dot{x}-\f
 &= \alpha(t_{m}) \cos ( \omega t_{m} - \beta )
 \end{aligned}
 $$
+
 ------
 
 把 $\alpha\left(t_{m}\right)$ 代入上式，得到

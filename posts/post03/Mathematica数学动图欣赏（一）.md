@@ -62,13 +62,13 @@ $$
 
 Mathematica 也会转棍子了？看到这里，**六老师**再也按捺不住，直呼内行。
 
-![180](liulaoshi.gif" width="180"/></div>
+![180](liulaoshi.gif)
 
 等等，看起来还很像台式机的风扇：
 
 ![280](fan.jpg)
 
-![180](meiyangyang.jpg" width="180"/></div>
+![180](meiyangyang.jpg)
 
 稍微修改一下参数，还可以衍生出下面的变种（~~统称为六老师快乐棍~~）
 

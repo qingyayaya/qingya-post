@@ -2,7 +2,7 @@
 title: SpiceyPy 和 mice 的一些差异
 date: 2023-01-10 18:00:00
 cover: static/pics/cover/cover29.png
-code: false
+code: true
 ---
 
 ![150](hi.jpg)
