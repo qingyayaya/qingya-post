@@ -3,5 +3,7 @@
   "theme": "moonstone",
   "enabledCssSnippets": [
     "style"
-  ]
+  ],
+  "showViewHeader": true,
+  "nativeMenus": false
 }

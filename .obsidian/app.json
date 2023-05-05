@@ -4,5 +4,9 @@
   ],
   "newFileLocation": "folder",
   "newFileFolderPath": "assets/",
-  "livePreview": false
+  "livePreview": true,
+  "showLineNumber": false,
+  "readableLineLength": true,
+  "foldHeading": true,
+  "showInlineTitle": false
 }
