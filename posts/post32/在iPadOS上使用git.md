@@ -2,12 +2,12 @@
 title: 在 iPadOS 上使用 git
 date: 2023-08-08 14:00:00
 cover: static/pics/cover/cover32.png
-code: false
+code: true
 ---
 
 谈论如何在 iPadOS 上使用 [git](https://git-scm.com/) 之前，我们需要介绍为什么会有这方面的需求：
 
->有一款小有名气的笔记管理软件叫做 [Obsidian](https://obsidian.md/)，我把它安装在我的 Linux 计算机和 iPad 上，在计算机上进行密集型的写作，在 iPad 上进行查阅及轻量级的编辑。但是问题在于 Obsidian 以本地化的笔记管理见长，这种设计理念意味着它在多端同步方面有着先天的不足，把计算机上的笔记同步到 iPad 是一件相当折磨的事情。
+>有一款小有名气的笔记管理软件叫做 [Obsidian](https://obsidian.md/)，我把它安装在我的 Linux 计算机和 iPad 上，在计算机上进行密集型的写作（比如本文），在 iPad 上进行查阅及轻量级的编辑。但是问题在于 Obsidian 以本地化的笔记管理见长，这种设计理念意味着它在多端同步方面有着先天的不足，把计算机上的笔记同步到 iPad 是一件相当折磨的事情。
 >
 >我最先想到的就是借助 github 进行同步（其实还有比它方便得多的办法，这将在后续介绍），然而 iPadOS 上并没有官方的 git CLI。第三方 git 工具比如 Working Copy 是收费软件，这与 git 本身的开源理念背道而驰，而且我个人认为其图形界面相当凌乱与丑陋，所以我对该第三方 APP 持抵触态度。再者相比图形界面我其实更习惯用命令行操作 git。
 >
@@ -47,7 +47,7 @@ apk add git g++
 
 ![500](mount-test.jpeg)
 
-选择自己喜欢的方式写一段代码，这里我用的是 Koder，写了一段非常简易的计算平方的 C++ 代码：
+选择自己喜欢的方式写一段代码，用 Linux 自带的 vi 或者安装 Vim 都可以，这里我用的是 Koder，写了一段非常简易的计算平方的 C++ 代码：
 
 ![500](koder.png)
 
