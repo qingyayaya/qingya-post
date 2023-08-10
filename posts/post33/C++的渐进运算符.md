@@ -2,7 +2,7 @@
 title: C++ 的渐进运算符
 date: 2023-08-10 14:00:00
 cover: static/pics/cover/cover33.png
-code: false
+code: true
 ---
 
 C++ 有一个非常花哨的运算符`a --> b`，它表示由`a`逐步长`-1`趋近`b`，比如下面的例子：
@@ -101,4 +101,4 @@ while (10 <++++++ x)
 
 ![600](workflow5.png)
 
-原理很虽然，但是思路很创新。
+原理很简单，但是思路很创新。
