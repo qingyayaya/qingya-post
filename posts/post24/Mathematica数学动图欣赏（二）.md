@@ -13,29 +13,29 @@ code: false
 
 # 动图 6
 
-![400](6.gif)
+![400](assets/6.gif)
 
 # 动图 7
 
-![400](7.gif)
+![400](assets/7.gif)
 
 # 动图 8
 
-![400](8.gif)
+![400](assets/8.gif)
 
 # 动图 9
 
-![400](9.gif)
+![400](assets/9.gif)
 
 # 动图 10
 
-![400](10.gif)
+![400](assets/10.gif)
 
 # 源代码
 
 关注青崖同学公众号，想获取哪个动图的源代码，就回复 **gif+序号**，比如 **gif1** 代表动图 1。示例：
 
-![400](getcode.jpg)
+![400](assets/getcode.jpg)
 
 # 结尾
 
@@ -45,4 +45,4 @@ code: false
 
 
 
-![400](qrcode.png)
+![400](assets/qrcode.png)

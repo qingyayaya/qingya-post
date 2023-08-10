@@ -7,11 +7,11 @@ code: true
 
 [marked.js](https://marked.js.org/) 是一款轻量级的快速 Markdown 解析器，可以运行在浏览器或服务器（ Node.js 环境）上，著名的 [Hexo](https://hexo.io/) 和 [docsify](https://docsify.js.org/) 等工具都依赖它，截至 2022 年 1 月 20 日，在 [Github](https://github.com/markedjs/marked) 的 Star 数是 26700+
 
-![360](star.png)
+![360](assets/star.png)
 
 在 [npm](https://www.npmjs.com/package/marked) 的周下载量高达 429 万，其火热程度可见一斑：
 
-![360](npm.png)
+![360](assets/npm.png)
 
 # 为什么要改造 marked.js
 
@@ -50,7 +50,7 @@ Hexo 先读取 Markdown 文件，把字符串交给 marked.js 解析，`$`包裹
 
 按照这样的思路，连带着把问题 4 也解决了，我让它认为`?>`是有意义的即可。不止如此，以后遇到新的需求，我仍然可以随心所欲地扩展语法，这样才**不失为解决问题的上策**。
 
-![150](liangzai.gif)
+![150](assets/liangzai.gif)
 
 那么，我需要扩展两个功能：
 
@@ -63,35 +63,35 @@ Hexo 先读取 Markdown 文件，把字符串交给 marked.js 解析，`$`包裹
 
 好在我找到一篇有帮助的[教程](https://blog.csdn.net/qq_22241923/article/details/106900403)，作者明确说明，得改，必须改动源代码。
 
-![150](damie.jpg)
+![150](assets/damie.jpg)
 
 于是我也去逐字逐句地阅读了 marked.js 的源代码，彻底弄清楚了它解析 Markdown 的原理。整个源代码的结构如下：
 
-![220](class.png)
+![220](assets/class.png)
 
 `marked.js`提供了入口函数，把 Markdown 字符串输入进去，它会返回解析后的 HTML。所以，从它开始读起。首先，词法分析器`Lexer`类对字符串进行分析，得到`tokens`。然后，把`tokens`交给解析器`Parser`类，得到 HTML。
 
-![400](marked.png)
+![400](assets/marked.png)
 
 `Lexer.js`得到 blockTokens 和 inlineTokens 两种 token，分别代表 HTML 的块级元素和行级元素：
 
-![400](Lexer.png)
+![400](assets/Lexer.png)
 
 以 blockTokens 为例，在一个 while 循环中，对字符串`src`进行匹配，`newline`，`code`，`fences`，`header`，......，挨个尝试，直到匹配到一个 token：
 
-![400](blockTokens.png)
+![400](assets/blockTokens.png)
 
 比如，匹配到 list 列表后，先把对应的字符串从`src`中掐掉，再把得到的 token 压进`tokens`数组中。
 
-![400](list.png)
+![400](assets/list.png)
 
 那么 token 究竟是怎么匹配出来的，需要阅读`Tokenizer.js`。每种块级元素和行内元素在 Tokenizer 类中都有对应的成员函数，在成员函数里定义了生成 token 的具体方法。
 
-![400](Tokenizer.png)
+![400](assets/Tokenizer.png)
 
 下面需要重点关注 rules，阅读`rules.js`。
 
-![400](rules.png)
+![400](assets/rules.png)
 
 原来`rules.block.newline`是一个正则表达式，通过执行`exec()`方法就可以对字符串进行匹配。
 
@@ -99,15 +99,15 @@ Hexo 先读取 Markdown 文件，把字符串交给 marked.js 解析，`$`包裹
 
 到此为止，弄清楚了词法分析器`Lexer`类和分词器`Tokenizer`类是如何从字符串中提取出 token 的，下面解析器`Parser`类将对 token 进行解析。阅读`Parser.js`，它通过 for 循环对`tokens`进行遍历，根据每个 token 的 type 属性选择对应的渲染方式。
 
-![400](Parser.png)
+![400](assets/Parser.png)
 
 进入渲染环节，需要阅读`Renderer.js`，每种块级元素和行内元素在 Renderer 类中都有对应的成员函数，定义了具体渲染成什么样：
 
-![400](Renderer.png)
+![400](assets/Renderer.png)
 
 官方文档也给 Renderer 部分提供了明确的 [API](https://marked.js.org/using_pro#renderer)，并指出用户可以通过`marked.use()`定制成自己想要的渲染方式。
 
-![400](api.png)
+![400](assets/api.png)
 
 不过，官方给出的定制自由度是不够的。自由度是不够是什么意思呢，官方按照内置的语法，把 Markdown 帮你解析好，你只能参与渲染这一最末端的环节，你可以把 blockquote 的渲染方式从：
 
@@ -131,7 +131,7 @@ blockquote(quote) {
 
 通过之前的分析，已经搞清楚了 marked.js 的工作机制，那么再进行语法扩展简直就是信手拈来了。
 
-![150](dog.jpg)
+![150](assets/dog.jpg)
 
 第一步，编写正则表达式，用于匹配`$`符号：
 
@@ -296,4 +296,4 @@ blockquote(quote, flag) {
 
 总结一下本文：由于网上已知的 3 种解决方案都不能满足我的需求，于是我通过分析源代码，扩展了 marked.js 的语法，彻底解决了 marked.js 的一些痛点，以后再有新的需求也可轻松实现。
 
-![150](yoohoo.jpg)
+![150](assets/yoohoo.jpg)

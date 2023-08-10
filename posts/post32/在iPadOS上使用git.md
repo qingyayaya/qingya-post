@@ -21,15 +21,15 @@ code: true
 
 直接在 [App Store](https://apps.apple.com/us/app/ish-shell/id1436902243) 搜索并安装即可，仅 5.9Mb 大小。
 
-![500](appstore.jpeg)
+![500](assets/appstore.jpeg)
 
 进入之后界面如下，提示我们可以通过`apk add <package>`安装软件，注意只能通过命令行进行交互。
 
-![500](ish.png)
+![500](assets/ish.png)
 
 它的文件系统可以在 iPad 自带的 Files 查看：
 
-![500](file.png)
+![500](assets/file.png)
 
 ## 使用 git
 
@@ -41,27 +41,27 @@ apk add git g++
 
 先在根目录下创建`test`文件夹，作为 iPadOS 文件系统的挂载点。我们在 iPad 上事先也准备了一个名为`test`的文件夹，它才真正承载着我们的 git 仓库。然后通过`mount`命令把 iPad 上的文件夹挂载到 iSH：
 
-![500](mount.jpeg)
+![500](assets/mount.jpeg)
 
 命令执行完毕会弹出对话框，选择需要挂载的文件夹即可：
 
-![500](mount-test.jpeg)
+![500](assets/mount-test.jpeg)
 
 选择自己喜欢的方式写一段代码，用 Linux 自带的 vi 或者安装 Vim 都可以，这里我用的是 Koder，写了一段非常简易的计算平方的 C++ 代码：
 
-![500](koder.png)
+![500](assets/koder.png)
 
 之后进入 iSH 使用`g++`进行编译：
 
-![500](g++1.jpeg)
+![500](assets/g++1.jpeg)
 
 可以看到代码成功编译并且输出了正确结果。然后我们初始化 git 仓库，并提交当前代码：
 
-![500](g++2.jpeg)
+![500](assets/g++2.jpeg)
 
 然后我们对代码进行简单修改，把计算平方改为计算立方，并重新编译执行（见上图）。执行的结果如下图。然后我们提交新的代码。
 
-![500](g++3.jpeg)
+![500](assets/g++3.jpeg)
 
 远程仓库的拉取和推送等功能也能正常使用，在此不做过多展示。可见，通过这种方式，我们不仅能使用 git 的完整功能，而且可以实现对 iPad 本地的文件进行版本控制。
 
@@ -75,8 +75,8 @@ apk add gnuplot
 
 简单画个函数：
 
-![500](gnuplot.jpeg)
+![500](assets/gnuplot.jpeg)
 
 成功输出了结果`sin.png`，我们可以在 iPad 上浏览该图片：
 
-![500](test.jpeg)
+![500](assets/test.jpeg)

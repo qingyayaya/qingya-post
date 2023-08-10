@@ -8,21 +8,21 @@ code: false
 
 作为一个轻度的地图控，我一直想探索地图投影这一块的知识。不知道大家有没有这样的疑问：高德地图、谷歌地图为什么都采用 Mercator 投影？
 
-![400](amap.png)
+![400](assets/amap.png)
 
 这种地图高纬度地区严重失真，格陵兰岛看起来比非州还要大，究竟有什么好处？
 
-![180](knowledge.jpg)
+![180](assets/knowledge.jpg)
 
 # 等距柱状投影
 
 因为本文涉及的投影方式都是圆柱投影，所以在介绍 Mercator 投影之前，不妨先了解一下比较简单的等距柱状投影。
 
-![400](Equirectangular.png)
+![400](assets/Equirectangular.png)
 
 这种投影用一个底面直径、高均等于地球直径的圆柱面卡住地球，圆柱的轴线与地轴重合。从地轴上一点出发，沿与赤道平行的方向把地表上一点投影到圆柱面上，再把圆柱面展开，就得到了等距柱状投影的地图。投影形成的各矩形网格单元具有相同的长宽。我愿用一句话来形容这个过程：
 
-![200](juan.jpg)
+![200](assets/juan.jpg)
 
 所谓地图投影，无非就是把地表一点 $(\lambda,\phi)$ 映射到平面上的一点 $(x,y)$，不然 map 这个单词为什么会有映射的意思呢（~~我瞎猜的~~）？等距柱状投影的映射关系足够简单：
 $$
@@ -33,7 +33,7 @@ y(\lambda,\phi) &= R \phi
 $$
 由于映射关系简单，所以在轨道力学中，经常用等距柱状投影绘制航天器的星下点轨迹，因为基本不需要经过复杂的转换。下面是几颗航天器的星下点轨迹：
 
-![400](PreviSat.png)
+![400](assets/PreviSat.png)
 
 # Mercator 投影
 
@@ -41,25 +41,25 @@ $$
 
 1569 年，Gerhardus Mercator 出版了他的世界地图，在这张地图上，平行的经线与平行的纬线垂直交错形成了经纬网，并且投影前后角度没有发生变化。这是一个开拓性的创造，Mercator 开创了地理学史新的篇章。
 
-![180](Mercator%20portrait1.jpeg)
+![180](assets/Mercator%20portrait1.jpeg)
 
 <p style="color: #939393; text-align: center;">（Gerhardus Mercator 1512-1594）</p>
 
 和等距柱状投影一样，Mercator 投影也是圆柱投影，投影遵循等角约束（具体如何实现，先按下不表）
 
-![400](Mercator.png)
+![400](assets/Mercator.png)
 
 地图上经纬线垂直的意义不言而喻，需要说明一下投影前后角度不变的意义：
 
 在 Mercator 的年代，航海导航全靠指南针，指南针会给出当地经线的方向，船的航行方向与经线夹成一定的角度。在 Mercator 的地图上，由于经线互相平行，我们任意画一条直线航线，会发现它与每条经线所夹的角度是相同的，那么根据角度不变，还原回地表，这条航线与球面的每条经线所夹的角度依然是相同的，这样我们让船的航行方向与指南针始终夹成这个角度，就可以实现沿着这条航线航行，到达目的地。这样的航线被称为等角航线。
 
-![220](rhumb%20line.jpg)
+![220](assets/rhumb%20line.jpg)
 
 在 Mercator 的地图上，用直线就可以轻松规划出一条等角航线，排除风浪等因素的干扰，只要利用指南针使得航行方向保持这个角度，就可以导航到目的地，非常便于测量和纠正，这就是 Mercator 的地图的先进性，直到今天仍然没有过时。
 
 回到本文开头的问题，各大地图软件为什么偏爱 Mercator 投影，答案就是方向不变。垂直的十字路口在 Mercator 投影上依然是垂直的，笔直的道路在 Mercator 投影上依然是笔直的。用一张图来说明：
 
-![300](amap%20kejilu.png)
+![300](assets/amap%20kejilu.png)
 
 下面，我们将根据等角约束，分别考虑地球是球体和椭球体两种情况，推导出 Mercator 投影的投影公式。
 
@@ -67,7 +67,7 @@ $$
 
 在平面投影图上，分别以 $0^{\circ}$ 经线和 $0^{\circ}$ 纬线为 $x$ 轴和 $y$ 轴建立直角坐标系。在地球表面取 $d\lambda$ 和 $d\phi$ 构成的微元，对应的弧长微元为 $dX$ 和 $dY$。根据 Mercator 投影经纬线互相垂直的特点，这个微元的平面投影是矩形，矩形的宽和高分别记作 $dx$ 和 $dy$。
 
-![500](angle.png)
+![500](assets/angle.png)
 
 有
 $$
@@ -179,11 +179,11 @@ $$
 
 横轴 Mercator 投影是在 Mercator 投影的基础上，把投影圆柱倾斜 $90^{\circ}$ 形成的，它依然继承等角约束，投影示意图如下：
 
-![400](TransverseMercator.png)
+![400](assets/TransverseMercator.png)
 
 和 Mercator 投影相反，它的特点是两级的变形最小，赤道的变形最大。
 
-![700](TransverseMercator%20North.png)
+![700](assets/TransverseMercator%20North.png)
 
 
 
@@ -200,17 +200,17 @@ y(\lambda,\phi) &= \frac{R}{2} \ln \left[ \frac{
 $$
 具体推导过程暂且不表，后文的斜轴 Mercator 投影部分会进行推导。
 
-![150](eye.jpg)
+![150](assets/eye.jpg)
 
 ------
 
 看到横轴 Mercator 投影的地图，不由得让我想起初中地理课本上解释地球仪的一张插图，书上的插图我已经找不到了，这里大概复现了一下：
 
-![400](divide1.png)
+![400](assets/divide1.png)
 
 大概意思就是：像剥桔子皮一样，把地表沿着一些经线剥开，再展成平面图。它的逆过程就是制作地球仪的过程。上图中的每一个梭形区域都是用横轴 Mercator 投影计算出来的。
 
-![240](divide2.png)
+![240](assets/divide2.png)
 
 # 三种投影的对比
 
@@ -226,19 +226,19 @@ $$
 
 在地球表面取 4 个地点，分别构造 3 条大圆航线（<font color=red>红色</font>）和 3 条等角航线（<font color=purple>紫色</font>），如下图（这里不纠结航线经过陆地的问题，或者把它们理解为飞机的航线）
 
-![250](line1.png)
+![250](assets/line1.png)
 
 等距柱状投影
 
-![300](line2.png)
+![300](assets/line2.png)
 
 Mercator 投影
 
-![300](line3.png)
+![300](assets/line3.png)
 
 横轴 Mercator 投影
 
-![300](line4.png)
+![300](assets/line4.png)
 
 通过对比可以发现：
 
@@ -253,19 +253,19 @@ Mercator 投影
 
 在地球表面取若干**等面积**的圆形区域，如下图：
 
-![250](disk1.png)
+![250](assets/disk1.png)
 
 等距柱状投影
 
-![300](disk2.png)
+![300](assets/disk2.png)
 
 Mercator 投影
 
-![300](disk3.png)
+![300](assets/disk3.png)
 
 横轴 Mercator 投影
 
-![300](disk4.png)
+![300](assets/disk4.png)
 
 通过对比可以发现：
 
@@ -277,11 +277,11 @@ Mercator 投影
 
 在横轴 Mercator 投影中，把投影圆柱倾斜了 $90^{\circ}$，那么如果把圆柱倾斜一个任意的角度呢？示意图如下：
 
-![300](ObliqueMercator.png)
+![300](assets/ObliqueMercator.png)
 
 这样形成的投影图称为斜轴 Mercator 投影，先预览一下倾斜 $90^{\circ}$、$60^{\circ}$、$30^{\circ}$、$0^{\circ}$ 时的投影图：
 
-![400](Oblique.png)
+![400](assets/Oblique.png)
 
 斜轴 Mercator 投影的投影公式为：
 
@@ -306,7 +306,7 @@ $$
 $$
 示意图如下：
 
-![500](sketch1.png)
+![500](assets/sketch1.png)
 
 定义 $\omega$ 为球面角 $\angle TQP$ 的补角，$p$ 为 $\angle QOP$。则 $(\omega,p) \longrightarrow (\lambda^{\prime},\phi^{\prime})$ 为
 $$
@@ -392,29 +392,29 @@ $$
 
 下面是本文最燃的一部分，让我们把倾斜角 $\alpha$ 从 $90^{\circ}$ 到 $0^{\circ}$ 的全过程用动图的形式呈现出来：
 
-![400](animate1.gif)
+![400](assets/animate1.gif)
 
 <p style="color: #939393; text-align: center;">（正视图）</p>
 
-![400](animate2.gif)
+![400](assets/animate2.gif)
 
 <p style="color: #939393; text-align: center;">（后视图）</p>
 
-![400](animate3.gif)
+![400](assets/animate3.gif)
 
 <p style="color: #939393; text-align: center;">（俯视图）</p>
 
-![400](animate4.gif)
+![400](assets/animate4.gif)
 
 <p style="color: #939393; text-align: center;">（平面图）</p>
 
-![150](burn.gif)
+![150](assets/burn.gif)
 
 按照惯例，此处应该附上代码，但是这个代码写的并不优雅，渲染上面 4 张动图足足用了 1 小时 57 分钟，所以就不公开出来了。
 
 # 关于 Mercator 投影的思考
 
-![150](chui.jpg)
+![150](assets/chui.jpg)
 
 （我并不是 GIS 专业的，这里斗胆谈一点个人的看法属于是，大佬勿嘲）
 
@@ -426,19 +426,19 @@ $$
 
 很多人在科普 Mercator 投影时都会引用上面这句话，甚至某百科都是这么说的。为此，他们还做了一张示意图：
 
-![100](bad%20projection.jpg)
+![100](assets/bad%20projection.jpg)
 
 乍一听感觉道出了 Mercator 投影的本质，我一开始也深信不疑。但细细一品，果真如此的话，投影公式 $y(\phi) = R \ln \left[ \tan \left( \frac{\phi}{2}+\frac{\pi}{4} \right) \right]$ 里的 $\ln$ 是从哪里来的？再细细一品，更不对劲，这样的话 $y(\phi)$ 直接等于 $R \tan \phi$ 了。简直让人哭笑不得。
 
-![220](liusanjie.jpg)
+![220](assets/liusanjie.jpg)
 
 从历史的角度来看，Mercator 投影是 1569 年提出的，**此时微积分尚且没有发明**，而且投影公式里的**对数 $\ln$ 是 17 世纪初才发表的**。所以，先不谈不用微积分能否推导出投影公式，你不可能在没有发明对数的年代使用对数吧？
 
-![150](girl.jpg)
+![150](assets/girl.jpg)
 
 所以，需要分清楚 **Mercator 投影**和 **Mercator 的投影**。1569 年，Mercator 出版了他的世界地图，他的确可能是根据“地球中心放一盏灯”这种说法绘制的地图。我们看下面这张邮票也体现着这种思想：
 
-![240](Mercator%20portrait2.jpg)
+![240](assets/Mercator%20portrait2.jpg)
 
 这是 **Mercator 的投影**。但是，**Mercator 投影**是后人修正后的。这多少有点类似**明史**与**《明史》**的关系。
 
@@ -446,7 +446,7 @@ $$
 
 不妨尝试对比一下 $y(\phi) = \tan \phi$ 和 $y(\phi) = \ln \left[ \tan \left( \frac{\phi}{2}+\frac{\pi}{4} \right) \right]$ 之间的差距：
 
-![500](figure1.png)
+![500](assets/figure1.png)
 
 纬度高于 $45^{\circ}$ 之后，二者的差距还是比较大的。
 
@@ -454,11 +454,11 @@ $$
 
 把上面的邮票放大：
 
-![200](Mercator%20portrait3.png)
+![200](assets/Mercator%20portrait3.png)
 
 发现发光点并不在圆心，而是偏移了一定的距离？？？不妨假设地球半径是 $R$，发光点相对圆心的偏移是 $\Delta$，针对纬度是 $\phi$ 的一点
 
-![400](sketch2.png)
+![400](assets/sketch2.png)
 
 根据正弦定理：
 $$
@@ -466,7 +466,7 @@ $$
 $$
 反解出 $\theta$：（有请 Mathematica）
 
-![500](snap1.png)
+![500](assets/snap1.png)
 
 那么，此时
 $$
@@ -479,21 +479,21 @@ y(\phi)
 $$
 这就是**修正后的投影公式**。如果令 $\Delta=0$，上式就退化成了 $y(\phi) = R \tan \phi$。
 
-![150](good.jpg)
+![150](assets/good.jpg)
 
 尝试计算一下它的逆变换：
 
-![800](snap2.png)
+![800](assets/snap2.png)
 
 有点过于复杂。
 
 那么这个 $\Delta$ 究竟取多少才最合适呢？在 $\Delta \in [0,R]$ 的区间内取几组数据，对比 $y=\frac{R (\Delta +R) \sin \phi}{\Delta +R \cos \phi}$ 和 $y(\phi) = R \ln \left[ \tan \left( \frac{\phi}{2}+\frac{\pi}{4} \right) \right]$ 的图像：
 
-![600](figure2.png)
+![600](assets/figure2.png)
 
 当 $\Delta$ 介于 $0.3R$ 和 $0.5R$ 之间时，修正的效果最好。说明把发光点进行一定程度的偏移**是行得通的**，而且竟然比圆心发光**更加有效**！
 
-![220](zhaobenshan.png)
+![220](assets/zhaobenshan.png)
 
 下面研究不同的发光点偏移与等角投影点的距离偏差，即下式的图像：
 
@@ -504,7 +504,7 @@ $$
 R \ln \left[ \tan \left( \frac{\phi}{2}+\frac{\pi}{4} \right) \right]
 $$
 
-![500](figure3.png)
+![500](assets/figure3.png)
 
 可以看出，在低于 $75^{\circ}$ 纬度的范围内，当 $\Delta=0.45R$ 基本可以保证偏差在 $0.01R$ 以内。
 
@@ -520,5 +520,5 @@ $$
 正确的中国地图如下：
 ```
 
-![400](China%20Map.png)
+![400](assets/China%20Map.png)
 

@@ -7,18 +7,18 @@ code: false
 
 第一次听说《An Introduction to the Mathematics and Methods of Astrodynamics》这本航天动力学最经典的教材，是在本科 Orbit Mechanics 这门课上。后来费了很大力气找到了电子版，一看 800 多页，旋即放弃。假期从图书馆找到了中文译本，打算好好啃一啃这本书。
 
-![200](book%20cover.png)
+![200](assets/book%20cover.png)
 
 <p style="color: #939393; text-align: center;">（本书封面）</p>
 
-![200](book%20cover%20cn.jpg)
+![200](assets/book%20cover%20cn.jpg)
 
 <p style="color: #939393; text-align: center;">（中文译本）</p>
 
-![200](battin.jpg)
+![200](assets/battin.jpg)
 <p style="color: #939393; text-align: center;">（作者 Battin）</p>
 
-![400](ppt.png)
+![400](assets/ppt.png)
 
 <p style="color: #939393; text-align: center;">（老师的 PPT 截图）</p>
 
@@ -724,11 +724,11 @@ $$
 $$
 借助数学软件`Mathematica`。分别对二者从 1 阶展开到 40 阶，数值运算的精度设为 80 位精度，比较 $\pi$ 的近似值与精确值的误差，并对误差取常用对数（以 10 为底），代码如下
 
-![](pi%20code.png)
+![](assets/pi%20code.png)
 
 结果如下图
 
-![500](pi%20plot.png)
+![500](assets/pi%20plot.png)
 
 可以看出，随着展开阶数的增加，连分式的误差呈指数衰减，而 Taylor 级数的误差只是线性衰减。事实上，想要得到 $\pi$ 的近似值 $3.1419526535$，连分式只需展开到 15 阶，而 Taylor 级数需要展开到第 50000 阶，所以难怪作者 Battin 吐槽说：
 
@@ -736,11 +736,11 @@ $$
 
 但是，前面毕竟只是个例，下面在 $x\in[0,1]$ 区间上对 $\arctan x$ 的连分式展开和 Taylor 展开进行对比，连分式展开到 10 阶，Taylor 展开 18 阶。由于`Mathematica`对 $\arctan x$ 的计算精度有限，所以不再指定数值运算的精度。代码如下
 
-![](arctan%20code.png)
+![](assets/arctan%20code.png)
 
 结果如下图
 
-![500](arctan%20plot.png)
+![500](assets/arctan%20plot.png)
 
 整体来说，连分式展开比 Taylor 展开精度更高，而且避免了大量的幂运算（由于数值计算的精度有限，$[0,0.4]$ 区间的误差结果并没有参考价值）
 

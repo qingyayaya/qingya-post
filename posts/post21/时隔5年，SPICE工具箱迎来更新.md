@@ -7,15 +7,15 @@ code: false
 
 其实这并不算是一个新闻，因为早在今年 1 月 3 日，[naif 官网](https://naif.jpl.nasa.gov/pub/naif/)就已经悄咪咪地发布了版本号 N0067 的全新版本，距上一次版本更新已经过去了 5 年。
 
-![400](N0067.jpg)
+![400](assets/N0067.jpg)
 
 寒假期间我大概看了看[新增的功能](https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/MATLAB/info/whatsnew.html#Version%2067%20---%20January%202022)，比较吸引我的是`cspice_spkw09`函数、azimuth/elevation、一个叫做 Switch Frames 的新坐标系统，以及新增 95 个 MATLAB API，让人不禁跃跃欲试。然而假期生活实在是太安逸了。直到开学后我才把新版下载下来。
 
-![180](dog.gif)
+![180](assets/dog.gif)
 
 我曾经在[重新编译 mice](https://qingyayaya.github.io/post/%E9%87%8D%E6%96%B0%E7%BC%96%E8%AF%91%20mice)提到过，因为 N0066 版本的 mice 没有提供`cspice_spkw09`函数，又始终没有更新的动静，所以我尝试自己写了这个函数，又重新编译了 mice。这次更新，官方终于给出了`cspice_spkw09`函数，我也和那些 bug 说再见了。
 
-![240](mycode.jpg)
+![240](assets/mycode.jpg)
 
 值得关注的更新点：
 
@@ -33,4 +33,4 @@ code: false
 - 增加了大量的内建 Body-Fixed Frames
 - 增加了 95 个 MATLAB API，如下：
 
-![400](newAPI.png)
+![400](assets/newAPI.png)

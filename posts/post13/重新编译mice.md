@@ -7,7 +7,7 @@ code: true
 
 今天聊聊 MATLAB。~~咦，MATLAB 一直不都是调侃的对象吗，怎么成主角了？~~No No No，所谓“圣人无常师”，只有小学生才会争论语言的高低贵贱，成年人都是驾驭自如为我所用的。
 
-![150](pupil.jpg)
+![150](assets/pupil.jpg)
 
 ``` ad-tip
 本教程只针对 Microsoft Windows 10 操作系统！
@@ -23,7 +23,7 @@ mice 是 MATLAB 版本的 SPICE Toolkit。SPICE Toolkit 享有盛名，这里不
 
 显然不能坐等官方团队在下一个版本进行适配，应该主动对 mice 进行定制，按照自己的需求增加功能，最后重新编译 mice。只有这样，以后才能更好地、可持续地利用 mice。
 
-![240](xiaowanzi.jpg)
+![240](assets/xiaowanzi.jpg)
 
 # 下载 mice
 
@@ -208,7 +208,7 @@ end
 
 **注意事项如下，请务必认真阅读：**
 
-![200](document.jpg)
+![200](assets/document.jpg)
 
 > 1. 测试环境为 MATLAB **2020b** 和 Microsoft Visual Studio **14.0**
 > 2. 脚本应放置在`<mice>\src\mice\`路径中，即与`mice.c`同一路径
@@ -293,7 +293,7 @@ end
 最后，即使按照以上步骤做了，也不一定能成功，比较依赖编译环境。但是，在 MATLAB **2020b** 和 Microsoft Visual Studio **14.0** 环境下，经测试，没有问题。**如果没成功，请不要迁怒于任何一个工具**，它们都是相当优秀的。
 ```
 
-![150](girl.jpg)
+![150](assets/girl.jpg)
 
 # 编译`vcf2c.lib`的步骤
 
@@ -314,4 +314,4 @@ end
 9. 完成
 10. 如果计算机装有 Mathematica，不妨去`<Mathematica安装路径>\SystemFiles\Components\WSMCore\lib\win64\VS2013`路径下，看看能否找到`f2c.lib`，这就是我们想要的库文件，Mathematica 已经帮我们编译好了，亲测可用
 
-![340](bed.gif)
+![340](assets/bed.gif)

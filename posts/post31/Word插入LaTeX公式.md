@@ -20,7 +20,7 @@ code: false
 
 但是，Word 内置的数学公式一般长下面的样子：
 
-![600](fig1.png)
+![600](assets/fig1.png)
 
 总感觉怪怪的、丑了吧唧的，和下面用 Mathjax 引擎渲染出来的 LaTeX 公式不太一样啊：
 $$
@@ -32,7 +32,7 @@ $$
 
 Latin Modern Math，是 TeX Live 自带的默认数学字体，可以在 https://www.gust.org.pl/projects/e-foundry/lm-math/download 下载到。下载好之后，把字体安装到计算机，在 Word 菜单栏找到公式，找到转换选项卡，选择 LaTeX，并点击右下角的按钮，在对话框中把公式区的默认字体改为 Latin Modern Math。
 
-![600](fig2.png)
+![600](assets/fig2.png)
 
 一气呵成后，新建一个公式，并粘贴下面的 LaTeX 代码：
 
@@ -42,11 +42,11 @@ f\left(x\right) = a_{0} + \sum_{n=1}^{\infty} \left( a_{n} \cos{\frac{n \pi x}{L
 
 然后右击公式，点击专用：
 
-![600](fig3.png)
+![600](assets/fig3.png)
 
 即可得到 LaTeX 公式：
 
-![600](fig4.png)
+![600](assets/fig4.png)
 
 如果想修改公式，可以直接进行修改，也可右击并转为线性格式，修改原始代码，改好后再转为专用格式。
 
@@ -54,15 +54,15 @@ f\left(x\right) = a_{0} + \sum_{n=1}^{\infty} \left( a_{n} \cos{\frac{n \pi x}{L
 
 右编号也是支持的，只需在代码的末尾后缀#()，括号内填写编号即可，比如：
 
-![600](fig5.png)
+![600](assets/fig5.png)
 
 转为专用格式，即可右编号：
 
-![600](fig6.png)
+![600](assets/fig6.png)
 
 不过右编号之后，右击然后点击线性是没有效果的，需要右击然后点击分解为独立公式，之后在独立公式上右击并点击线性才可以，如下图所示：
 
-![600](fig7.png)
+![600](assets/fig7.png)
 
 ------
 

@@ -21,7 +21,7 @@ $$
 
 圆型限制性三体问题有 5 个平动点。其中 3 个在 $X$ 轴上，称为共线平动点。另外 2 个称为三角平动点。
 
-![400](equilibrium.png)
+![400](assets/equilibrium.png)
 
 这里只关注这 3 个共线平动点，它们分别满足：
 $$
@@ -238,7 +238,7 @@ $$
 
 三维轨迹如下
 
-![](lissajous.gif)
+![](assets/lissajous.gif)
 
 # 施加 $z$ 方向脉冲
 
@@ -336,7 +336,7 @@ y(t_m) &= c A_{1}^{(f)} e^{\lambda t_m} - c A_{2}^{(f)} e^{-\lambda t_m} - \bar{
 $$
 太复杂了，借助 Mathematica 求解：
 
-![600](solve1.png)
+![600](assets/solve1.png)
 
 整理一下
 $$
@@ -462,7 +462,7 @@ $$
 
 效仿 $z$ 方向脉冲的情况，可以解出 $A_{k}^{(f)} - A_{k}^{(i)},k=1,2,3,4$ 的值。借助 Mathematica 求解：
 
-![600](solve2.png)
+![600](assets/solve2.png)
 
 整理一下
 $$
@@ -510,11 +510,11 @@ $$
 
 以 $\Phi$ 为横坐标，以 $\Psi$ 为纵坐标，随着时间 $t$ 的增加，图像长下面的样子：
 
-![500](EPP1.png)
+![500](assets/EPP1.png)
 
 $(x,y,z) \rightarrow (\Phi,\Psi)$ 把 Lissajous 轨道上的每一个状态映射到了有效相平面上的一点。
 
-![500](EPP2.png)
+![500](assets/EPP2.png)
 
 # 规避日食
 
@@ -539,8 +539,8 @@ $$
 
 下图中，A 代表航天器在有效相平面上的初始位置，如果不干预，它将进入日食区域。通过在 B 处施加 $xy$ 方向的脉冲，可以把 $\Phi$ 调整到 C 处，进而躲避日食区域。
 
-![500](maneuver_xy.png)
+![500](assets/maneuver_xy.png)
 
 施加 $z$ 方向的脉冲原理相同。
 
-![500](maneuver_z.png)
+![500](assets/maneuver_z.png)
