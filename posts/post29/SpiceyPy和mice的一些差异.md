@@ -7,7 +7,7 @@ code: true
 
 ![150](assets/hi.jpg)
 
-SpiceyPy 是 Python 版本的 SPICE 工具箱，mice 是 MATLAB 版本的 SPICE 工具箱。SpiceyPy 和 mice 用起来有一些差异，尤其是先接触 mice 再接触 SpiceyPy 的用户，这里主要介绍三点不同：**Not Found Errors**、**向量化**、**spkw09()**。
+SpiceyPy 是 Python 版本的 SPICE 工具箱，mice 是 MATLAB 版本的 SPICE 工具箱。SpiceyPy 和 mice 用起来有一些差异，尤其是先接触 mice 再接触 SpiceyPy 的用户，这里主要介绍三点不同：**Not Found Errors**、**向量化**、<strong>spkw09()</strong>。
 
 ![350](assets/spice.jpeg)
 
