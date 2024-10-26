@@ -1,7 +1,6 @@
 ---
 title: Mathematica 数学动图欣赏（二）
 date: 2022-05-14 09:40:00
-cover: static/pics/cover/cover24.png
 code: false
 ---
 

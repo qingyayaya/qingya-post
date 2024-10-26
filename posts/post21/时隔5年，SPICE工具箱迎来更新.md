@@ -1,7 +1,6 @@
 ---
 title: 时隔 5 年，SPICE 工具箱迎来更新
 date: 2022-03-29 16:00:00
-cover: static/pics/cover/cover21.png
 code: false
 ---
 

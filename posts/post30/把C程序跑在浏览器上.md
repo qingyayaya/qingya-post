@@ -1,7 +1,6 @@
 ---
 title: 把 C 程序跑在浏览器上
 date: 2023-05-05 14:00:00
-cover: static/pics/cover/cover30.png
 code: true
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: C++ 的渐进运算符
 date: 2023-08-10 14:00:00
-cover: static/pics/cover/cover33.png
 code: true
 ---
 

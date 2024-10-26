@@ -1,7 +1,6 @@
 ---
 title: 重新编译 mice
 date: 2021-11-01 20:00:00
-cover: static/pics/cover/cover13.png
 code: true
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: 【游戏安利】The Witness 之解谜篇
 date: 2022-01-23 19:00:00
-cover: static/pics/cover/cover15.png
 code: false
 tags: game
 ---

@@ -1,7 +1,6 @@
 ---
 title: C++ 模板穿透技术
 date: 2024-10-23 10:00:00
-cover: static/pics/cover/cover37.png
 code: true
 ---
 

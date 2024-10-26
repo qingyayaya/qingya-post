@@ -1,7 +1,6 @@
 ---
 title: MathJax 服务端渲染 LaTeX
 date: 2022-03-10 19:00:00
-cover: static/pics/cover/cover17.png
 code: true
 ---
 

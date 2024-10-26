@@ -1,7 +1,6 @@
 ---
 title: Python 调用 C 语言动态链接库
 date: 2022-11-09 10:00:00
-cover: static/pics/cover/cover27.png
 code: false
 ---
 

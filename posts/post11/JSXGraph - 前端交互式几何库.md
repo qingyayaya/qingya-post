@@ -1,7 +1,6 @@
 ---
 title: JSXGraph - 前端交互式几何库
 date: 2021-10-17 18:00:00
-cover: static/pics/cover/cover11.png
 code: true
 ---
 

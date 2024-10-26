@@ -1,7 +1,6 @@
 ---
 title: Word 插入 LaTeX 公式
 date: 2023-07-24 14:00:00
-cover: static/pics/cover/cover31.png
 code: false
 ---
 

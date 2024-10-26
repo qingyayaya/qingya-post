@@ -1,7 +1,6 @@
 ---
 title: MaTeX 与 LaTeX
 date: 2021-08-02 22:08:00
-cover: static/pics/cover/cover4.png
 code: true
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: JSXGraph - 尺规作正十七边形
 date: 2021-10-17 20:00:00
-cover: static/pics/cover/cover12.png
 code: true
 ---
 

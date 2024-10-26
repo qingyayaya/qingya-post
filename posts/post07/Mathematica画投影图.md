@@ -1,7 +1,6 @@
 ---
 title: Mathematica 画投影图
 date: 2021-09-11 12:00:00
-cover: static/pics/cover/cover7.png
 code: true
 ---
 
@@ -42,7 +41,7 @@ ShadowFigure 包可以通过下面的命令一键导入：
 
 
 ```mathematica
-Get["https://gitee.com/qingyaya/graphics3D/raw/master/ShadowFigure.m"]
+Get["https://github.com/qingyayaya/graphics3D/raw/master/ShadowFigure.m"]
 ```
 
 用 ShadowFigure 函数绘制一个立方体的投影图：

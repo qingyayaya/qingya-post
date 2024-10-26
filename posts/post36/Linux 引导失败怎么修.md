@@ -1,7 +1,6 @@
 ---
 title: Linux 引导失败怎么修
 date: 2024-07-05 14:00:00
-cover: static/pics/cover/cover36.png
 code: false
 ---
 

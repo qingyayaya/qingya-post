@@ -1,7 +1,6 @@
 ---
 title: 从 ln(1+x) 的连分式展开谈起
 date: 2021-07-15 17:51:00
-cover: static/pics/cover/cover1.png
 code: false
 ---
 

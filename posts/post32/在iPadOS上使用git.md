@@ -1,7 +1,6 @@
 ---
 title: 在 iPadOS 上使用 git
 date: 2023-08-08 14:00:00
-cover: static/pics/cover/cover32.png
 code: true
 ---
 

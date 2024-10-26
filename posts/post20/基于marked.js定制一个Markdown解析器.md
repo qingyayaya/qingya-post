@@ -1,7 +1,6 @@
 ---
 title: 基于 marked.js 定制一个 Markdown 解析器
 date: 2022-03-28 17:00:00
-cover: static/pics/cover/cover20.png
 code: true
 ---
 

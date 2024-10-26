@@ -1,7 +1,6 @@
 ---
 title: Mercator 投影
 date: 2021-09-19 12:00:00
-cover: static/pics/cover/cover8.png
 code: false
 ---
 
