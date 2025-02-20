@@ -148,7 +148,7 @@ If[$VersionNumber>=9,Graphics`Graphics3D`Private`FilterOptions[a_,b___]:=Sequenc
 修复后的 Graphics3D 扩展包的代码已经在 Gitee 开源（和上文的 ShadowFigure 放在同一个仓库里），通过下面的命令可以一键导入：
 
 ```mathematica
-Get["https://gitee.com/qingyaya/graphics3D/raw/master/Graphics3D.m"]
+Get["https://github.com/qingyayaya/graphics3D/raw/master/Graphics3D.m"]
 ```
 
 运行上面的代码会报一个错误，即依然会提示 Graphics&#x60;Graphics3D&#x60; 已经过期，前面已经说过了，不用管它，如果实在不想看到，不妨给它改个名字。
