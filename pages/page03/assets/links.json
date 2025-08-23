@@ -1,0 +1,506 @@
+[
+  {
+    "name": "科研",
+    "icon": "research",
+    "site": [
+      {
+        "name": "Google Scholar",
+        "desc": "",
+        "url": "https://scholar.google.com"
+      },
+      {
+        "name": "Google Patents",
+        "desc": "",
+        "url": "https://patents.google.com"
+      },
+      {
+        "name": "ResearchGate",
+        "desc": "",
+        "url": "https://www.researchgate.net"
+      },
+      {
+        "name": "中国知网",
+        "desc": "",
+        "url": "https://www.cnki.net"
+      },
+      {
+        "name": "LetPub",
+        "desc": "最新 SCI 期刊查询及投稿分析系统",
+        "url": "https://www.letpub.com.cn"
+      },
+      {
+        "name": "中国版权保护中心",
+        "desc": "",
+        "url": "https://www.ccopyright.com.cn"
+      },
+      {
+        "name": "Papers With Code",
+        "desc": "",
+        "url": "https://paperswithcode.com"
+      },
+      {
+        "name": "Zenodo",
+        "desc": "Research Shared",
+        "url": "https://zenodo.org"
+      },
+      {
+        "name": "核心期刊查询",
+        "desc": "上海交通大学核心期刊查询系统",
+        "url": "http://corejournal.lib.sjtu.edu.cn/"
+      },
+      {
+        "name": "专利查询",
+        "desc": "专利检索及分析",
+        "url": "http://pss-system.cnipa.gov.cn/"
+      }
+    ]
+  },
+  {
+    "name": "翻译",
+    "icon": "translate",
+    "site": [
+      {
+        "name": "DeepL",
+        "desc": "",
+        "url": "https://www.deepl.com/translator"
+      },
+      {
+        "name": "谷歌翻译",
+        "desc": "",
+        "url": "https://translate.google.cn/"
+      },
+      {
+        "name": "有道翻译",
+        "desc": "",
+        "url": "https://fanyi.youdao.com/"
+      }
+    ]
+  },
+  {
+    "name": "学习",
+    "icon": "learn",
+    "site": [
+      {
+        "name": "菜鸟教程",
+        "desc": "",
+        "url": "https://www.runoob.com"
+      }
+    ]
+  },
+  {
+    "name": "电子书",
+    "icon": "ebook",
+    "site": [
+      {
+        "name": "Z-Library",
+        "desc": "",
+        "url": "https://singlelogin.me"
+      },
+      {
+        "name": "Open Library",
+        "desc": "",
+        "url": "https://openlibrary.org"
+      },
+      {
+        "name": "鸠摩搜书",
+        "desc": "",
+        "url": "https://www.jiumodiary.com/"
+      }
+    ]
+  },
+  {
+    "name": "在线工具",
+    "icon": "tool",
+    "site": [
+      {
+        "name": "正则表达式测试",
+        "desc": "",
+        "url": "https://c.runoob.com/front-end/854/"
+      },
+      {
+        "name": "Unicode字符查询",
+        "desc": "",
+        "url": "https://unicode-table.com/cn/"
+      },
+      {
+        "name": "HTML转义/反转义工具",
+        "desc": "",
+        "url": "http://tools.jb51.net/transcoding/html_transcode"
+      },
+      {
+        "name": "IPv6地址查询工具",
+        "desc": "",
+        "url": "https://ip.zxinc.org/ipquery/"
+      },
+      {
+        "name": "ColorDrop",
+        "desc": "",
+        "url": "https://colordrop.io/"
+      },
+      {
+        "name": "中国色",
+        "desc": "",
+        "url": "http://zhongguose.com/"
+      },
+      {
+        "name": "在线PS",
+        "desc": "",
+        "url": "https://ps.gaoding.com/"
+      },
+      {
+        "name": "数据可视化",
+        "desc": "",
+        "url": "https://www.bioladder.cn/"
+      },
+      {
+        "name": "Iconfont",
+        "desc": "阿里矢量图标库",
+        "url": "https://www.iconfont.cn/"
+      },
+      {
+        "name": "白描",
+        "desc": "在线 OCR",
+        "url": "https://web.baimiaoapp.com/"
+      },
+      {
+        "name": "Convertio",
+        "desc": "在线文件格式转换",
+        "url": "https://convertio.co/zh/"
+      },
+      {
+        "name": "九九参考计算网",
+        "desc": "",
+        "url": "https://www.99cankao.com/"
+      },
+      {
+        "name": "PDF Tools",
+        "desc": "在线 PDF 处理工具",
+        "url": "https://pdf.io/"
+      },
+      {
+        "name": "i18ns",
+        "desc": "App&Web 国际化翻译搜索",
+        "url": "https://i18ns.com/zh/"
+      },
+      {
+        "name": "更多在线工具",
+        "desc": "",
+        "url": "https://tool.lu/"
+      }
+    ]
+  },
+  {
+    "name": "镜像站",
+    "icon": "mirror",
+    "site": [
+      {
+        "name": "清华大学开源软件镜像站",
+        "desc": "",
+        "url": "https://mirrors.tuna.tsinghua.edu.cn"
+      },
+      {
+        "name": "华为开源镜像站",
+        "desc": "",
+        "url": "https://mirrors.huaweicloud.com"
+      }
+    ]
+  },
+  {
+    "name": "前端",
+    "icon": "frontend",
+    "site": [
+      {
+        "name": "Sketchfab",
+        "desc": "",
+        "url": "https://sketchfab.com/"
+      }
+    ]
+  },
+  {
+    "name": "LaTeX",
+    "icon": "latex",
+    "site": [
+      {
+        "name": "在线 LaTeX 公式编辑器",
+        "desc": "",
+        "url": "https://www.latexlive.com"
+      },
+      {
+        "name": "LaTeX Equation Editor",
+        "desc": "",
+        "url": "https://latex.codecogs.com/eqneditor/editor.php"
+      },
+      {
+        "name": "Qverleaf",
+        "desc": "在线、协同的 LaTeX 编辑器",
+        "url": "https://cn.overleaf.com/"
+      }
+    ]
+  },
+  {
+    "name": "MATLAB",
+    "icon": "matlab",
+    "site": [
+      {
+        "name": "官方文档",
+        "desc": "",
+        "url": "https://ww2.mathworks.cn/help/matlab"
+      },
+      {
+        "name": "File Exchange",
+        "desc": "",
+        "url": "https://ww2.mathworks.cn/matlabcentral/fileexchange/"
+      },
+      {
+        "name": "Pick of Week",
+        "desc": "",
+        "url": "https://blogs.mathworks.com/pick/"
+      }
+    ]
+  },
+  {
+    "name": "轨道力学博客",
+    "icon": "orbitblog",
+    "site": [
+      {
+        "name": "Space Research Blog",
+        "desc": "",
+        "url": "https://spaceresearch.top/blog/"
+      },
+      {
+        "name": "gaofabao",
+        "desc": "",
+        "url": "http://www.gaofabao.com/"
+      },
+      {
+        "name": "Gereshes",
+        "desc": "",
+        "url": "https://gereshes.com/"
+      },
+      {
+        "name": "欧机汪",
+        "desc": "",
+        "url": "https://ogww.com/"
+      },
+      {
+        "name": "Planetary Fact Sheet",
+        "desc": "",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/"
+      },
+      {
+        "name": "开放航空航天工具集锦",
+        "desc": "",
+        "url": "https://spacefan.github.io/"
+      }
+    ]
+  },
+  {
+    "name": "轨道力学数据库",
+    "icon": "orbitdatabase",
+    "site": [
+      {
+        "name": "月球与行星多媒体数据库",
+        "desc": "",
+        "url": "http://moon.bao.ac.cn/mul/index/list"
+      },
+      {
+        "name": "CelesTrak",
+        "desc": "",
+        "url": "https://celestrak.com/"
+      },
+      {
+        "name": "八大行星资料表",
+        "desc": "",
+        "url": "http://web.mit.edu/yenjie/www/lm-gb/Space/planets-fact.htm"
+      },
+      {
+        "name": "太阳系小天体数据库",
+        "desc": "",
+        "url": "http://www.astorb.com/mb/"
+      },
+      {
+        "name": "Planetary Fact Sheet",
+        "desc": "",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/"
+      },
+      {
+        "name": "Solar Textures",
+        "desc": "",
+        "url": "https://www.solarsystemscope.com/textures/"
+      }
+    ]
+  },
+  {
+    "name": "轨道力学在线仿真",
+    "icon": "orbitonline",
+    "site": [
+      {
+        "name": "Satellite Orbit Visualization",
+        "desc": "",
+        "url": "https://satvis.space/"
+      },
+      {
+        "name": "n2yo",
+        "desc": "",
+        "url": "https://www.n2yo.com/"
+      },
+      {
+        "name": "AGSatTrack",
+        "desc": "",
+        "url": "https://agsattrack.com/"
+      },
+      {
+        "name": "LaptrinhX",
+        "desc": "",
+        "url": "https://laptrinhx.com/satellite-orbit-visualization-and-pass-prediction-with-cesium-js-3632672685/"
+      },
+      {
+        "name": "ICE Plotter",
+        "desc": "",
+        "url": "https://exoplanetarchive.ipac.caltech.edu/cgi-bin/IcePlotter/nph-icePlotInit?mode=demo&set=confirmed"
+      },
+      {
+        "name": "CelesTrak Orbit Visualization",
+        "desc": "",
+        "url": "https://celestrak.com/cesium/orbit-viz.php?tle=/pub/TLE/catalog.txt&satcat=/pub/satcat.txt&referenceFrame=1"
+      },
+      {
+        "name": "Satellite Map",
+        "desc": "",
+        "url": "https://maps.esri.com/rc/sat2/index.html#"
+      },
+      {
+        "name": "orbitalpredictor",
+        "desc": "",
+        "url": "http://www.orbitalpredictor.com/home/"
+      },
+      {
+        "name": "Sentinelhub-js",
+        "desc": "",
+        "url": "https://medium.com/sentinel-hub/sentinelhub-js-open-source-library-for-satellite-imagery-powered-web-applications-aabe5495495b"
+      },
+      {
+        "name": "100,000 Stars",
+        "desc": "",
+        "url": "https://stars.chromeexperiments.com/"
+      },
+      {
+        "name": "Proper Motion Simulator",
+        "desc": "",
+        "url": "http://orbitsimulator.com/gravitySimulatorCloud/properMotionHome.html"
+      },
+      {
+        "name": "Gravity Simulator",
+        "desc": "",
+        "url": "http://www.orbitsimulator.com/gravity/articles/simu.html"
+      },
+      {
+        "name": "Space Reference",
+        "desc": "",
+        "url": "https://www.spacereference.org/"
+      },
+      {
+        "name": "Orbit injection calculator",
+        "desc": "",
+        "url": "https://www.satsig.net/orbit-research/delta-v-geo-injection-calculator.htm"
+      },
+      {
+        "name": "Heavens-Above",
+        "desc": "",
+        "url": "https://www.heavens-above.com/main.aspx"
+      },
+      {
+        "name": "Shawn's Satellite Simulator",
+        "desc": "",
+        "url": "https://www.gano.name/SSS/index.php"
+      },
+      {
+        "name": "XSpace Simulator",
+        "desc": "",
+        "url": "http://www.xspace.org/Sim/index.html"
+      },
+      {
+        "name": "N-body simulator",
+        "desc": "",
+        "url": "https://sunsistemo.js.org/?s=The-Sun"
+      },
+      {
+        "name": "Earth View",
+        "desc": "实时昼夜分界线",
+        "url": "http://www.fourmilab.ch/cgi-bin/uncgi/Earth/action?opt=-p"
+      },
+      {
+        "name": "Resonant Orbit Calculator",
+        "desc": "Kerbal Space Program",
+        "url": "https://meyerweb.com/eric/ksp/resonant-orbits/"
+      }
+    ]
+  },
+  {
+    "name": "数学网站",
+    "icon": "math",
+    "site": [
+      {
+        "name": "Integral Calculator",
+        "desc": "With Steps",
+        "url": "https://www.integral-calculator.com/"
+      },
+      {
+        "name": "Derivative Calculator",
+        "desc": "",
+        "url": "https://www.derivative-calculator.net/"
+      },
+      {
+        "name": "Desmos",
+        "desc": "免费领略数学之美",
+        "url": "https://www.desmos.com/?lang=zh-CN"
+      },
+      {
+        "name": "Approach Zero",
+        "desc": "",
+        "url": "https://approach0.xyz/search/"
+      },
+      {
+        "name": "Interactive Mathematics",
+        "desc": "Learn math while you play with it!",
+        "url": "https://www.intmath.com/"
+      },
+      {
+        "name": "文艺数学君",
+        "desc": "换种姿势学数学",
+        "url": "https://mathpretty.com/"
+      }
+    ]
+  },
+  {
+    "name": "导航网站",
+    "icon": "nav",
+    "site": [
+      {
+        "name": "龙轩导航",
+        "desc": "",
+        "url": "http://ilxdh.com/"
+      },
+      {
+        "name": "Castalia",
+        "desc": "不只是设计师的灵感源泉",
+        "url": "https://afterwork-design.github.io/castalia/"
+      },
+      {
+        "name": "可乐不加糖Candy",
+        "desc": "科研、学术与研究工具一站式导航",
+        "url": "https://candyleong.github.io/"
+      },
+      {
+        "name": "LKs",
+        "desc": "良心到难以置信的网站推荐",
+        "url": "https://xiangjianan.gitee.io/lks/"
+      },
+      {
+        "name": "在线工具",
+        "desc": "",
+        "url": "https://tool.lu/nav/"
+      }
+    ]
+  }
+]

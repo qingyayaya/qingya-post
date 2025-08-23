@@ -1,0 +1,41 @@
+# `qingya` Configuration
+
+#CDN
+cdn: https://gcore.jsdelivr.net/gh/qingyayaya/qingya-post
+
+# Site
+name: 青崖同学
+author: 青崖同学
+language: en
+icon: static/pics/img/avatar.png
+logo: static/pics/img/og_image.svg
+
+# URL
+## Set your site url here. For example, if you use GitHub Page, set url as https://username.github.io/project
+url: https://qingyayaya.github.io
+
+# Directory
+source_dir: .
+public_dir: .public
+skip_render: 404/index.html # skip render 404
+
+# Date / Time format
+## qingya uses Moment.js to parse and display date. You can customize the date format as defined in http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Cover
+cover: true
+
+# Motto
+motto: Less is More
+
+# Deployment
+deploy:
+  repository: https://github.com/qingyayaya/qingyayaya.github.io.git
+  branch: master
+  user_email: 898489431@qq.com
+  user_name: qingyayaya
+
+# Whether to compress HTML, JS, CSS
+minimize: false
