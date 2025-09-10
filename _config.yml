@@ -7,8 +7,8 @@ cdn: https://gcore.jsdelivr.net/gh/qingyayaya/qingya-post
 name: 青崖同学
 author: 青崖同学
 language: en
-icon: static/pics/img/avatar.png
-logo: static/pics/img/og_image.svg
+icon: static/pics/avatar.png
+logo: static/pics/og_image.svg
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as https://username.github.io/project
